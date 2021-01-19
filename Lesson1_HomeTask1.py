@@ -31,3 +31,7 @@ while question_2 != right_answer[1]:
         print('Верно. Ай Вы молодец!')
     else:
         print('Не верно. Соберитесь.')
+
+after_column = 3.195
+
+print(type(after_column), after_column)
