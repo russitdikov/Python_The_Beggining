@@ -3,7 +3,7 @@
 
 user_number = int(input('введите целое положительное число: '))
 
-max_num=0
+max_num = 0
 
 while user_number // 10 != 0:
     test_number = user_number % 10
@@ -12,5 +12,3 @@ while user_number // 10 != 0:
         max_num = test_number
 
 print(max_num)
-
-
