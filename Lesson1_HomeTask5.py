@@ -14,8 +14,8 @@ if result < 0:
     print('Сожалеем. Фирма сработала в убыток')
 else:
     print('Отлично. Фирма получила прибыль')
-    ROS = (income-costs)/income
+    ROS = (income - costs) / income
     staff = int(input('Введите численность персонала:'))
-    profit_per_person = (income-costs)/staff
-    print(f'Итоги: прибыль: {income-costs}, рентабельность выручки: {ROS}, прибыль на сотрудника : {profit_per_person}')
-
+    profit_per_person = (income - costs) / staff
+    print(
+        f'Итоги: прибыль: {income - costs}, рентабельность выручки: {ROS}, прибыль на сотрудника : {profit_per_person}')
