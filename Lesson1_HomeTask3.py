@@ -3,5 +3,4 @@
 
 user_number = int(input('Введите число: '))
 
-print(int(f'{user_number}')+int(f'{user_number}{user_number}')+int(f'{user_number}{user_number}{user_number}'))
-
+print(int(f'{user_number}') + int(f'{user_number}{user_number}') + int(f'{user_number}{user_number}{user_number}'))
