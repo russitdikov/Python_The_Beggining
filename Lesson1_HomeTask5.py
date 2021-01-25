@@ -6,8 +6,8 @@
 #   Это отношение прибыли к выручке. Далее запросите численность сотрудников фирмы и определите
 #   прибыль фирмы в расчёте на одного сотрудника.
 
-income = int(input('Введите выручку: '))
-costs = int(input('Введите затраты: '))
+income = float(input('Введите выручку: '))
+costs = float(input('Введите затраты: '))
 result = income - costs
 
 if result < 0:
@@ -18,4 +18,4 @@ else:
     staff = int(input('Введите численность персонала:'))
     profit_per_person = (income - costs) / staff
     print(
-        f'Итоги: прибыль: {income - costs}, рентабельность выручки: {ROS}, прибыль на сотрудника : {profit_per_person}')
+        f'Итоги: прибыль: {(income - costs):.2f}, рентабельность выручки: {ROS:.2f}, прибыль на сотрудника : {profit_per_person:.2f}')

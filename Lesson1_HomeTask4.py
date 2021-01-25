@@ -5,7 +5,8 @@ user_number = int(input('введите целое положительное ч
 
 max_num = 0
 
-while user_number // 10 != 0:
+
+while (user_number*10) // 10 != 0:
     test_number = user_number % 10
     user_number = user_number // 10
     if max_num < test_number:
