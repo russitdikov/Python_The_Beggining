@@ -20,27 +20,29 @@ menu_selection = None
 goods_DB = []
 
 while True:
-    menu_selection = int(input('Выберите пункт меню (1 - внести информацию о товарах, 2 - показать аналитику,любая другая цифра -закончить работу): '))
+    menu_selection = int(input(
+        'Выберите пункт меню (1 - внести информацию о товарах, 2 - показать аналитику,любая другая цифра -закончить работу): '))
     if menu_selection == 1:
-        print(f'{"*"*10} раздел обновления базы данных {"*"*10}')
+        print(f'{"*" * 10} раздел обновления базы данных {"*" * 10}')
         goods_num = int(input('Введите количество позиций: '))
-        i=1
+        i = 1
         goods_descr = {
 
         }
 
-        while goods_num >= i :
-            print(f'{"*"*10} Информация по товару {i}{"*"*10}:')
+        while goods_num >= i:
+            print(f'{"*" * 10} Информация по товару {i}{"*" * 10}:')
             name = input('введите наименование товара ')
             price = int(input('введите стоимость товара '))
             origin = input('введите страну происхождения товара ')
             qnt = int(input('введите количество товара '))
             pcs = input('введите единцу измерения товара ')
             goods_descr = {
-                'название': name, 'стоимость':price, 'страна происхождения':origin, 'количество':qnt, 'единица измерения':pcs
+                'название': name, 'стоимость': price, 'страна происхождения': origin, 'количество': qnt,
+                'единица измерения': pcs
             }
-            goods_DB.append((i,goods_descr))
-            i +=1
+            goods_DB.append((i, goods_descr))
+            i += 1
 
     elif menu_selection == 2:
         print(f'{"*" * 10} раздел аналитики {"*" * 10}')
@@ -53,20 +55,15 @@ while True:
         qnts = []
         pcss = []
 
-
-
         for good in goods_DB:
             names.append(goods_DB[goods_DB.index(good)][1]['название'])
             prices.append(goods_DB[goods_DB.index(good)][1]['стоимость'])
             origins.append(goods_DB[goods_DB.index(good)][1]['страна происхождения'])
             qnts.append(goods_DB[goods_DB.index(good)][1]['количество'])
             pcss.append(goods_DB[goods_DB.index(good)][1]['единица измерения'])
-            analysis = { 'название':names, 'цена':prices,'страна происхождения':origins,'количество':qnts,'единицы измерения':pcss}
+            analysis = {'название': names, 'цена': prices, 'страна происхождения': origins, 'количество': qnts,
+                        'единицы измерения': pcss}
 
         print(analysis)
     else:
         break
-
-
-
-
