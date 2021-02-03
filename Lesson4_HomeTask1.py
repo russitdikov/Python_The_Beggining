@@ -8,4 +8,3 @@ from sys import argv
 script_name, workhours, s_per_hour, bonus = argv
 
 print((int(workhours) * int(s_per_hour)) + int(bonus))
-
