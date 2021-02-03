@@ -4,7 +4,11 @@
 # запускать скрипт с параметрами.
 
 from sys import argv
+def s_calc():
+    try:
+        script_name, workhours, s_per_hour, bonus = argv
+        print((float(workhours) * float(s_per_hour)) + float(bonus))
+    except ValueError:
+        print('Введите три параметра')
 
-script_name, workhours, s_per_hour, bonus = argv
-
-print((int(workhours) * int(s_per_hour)) + int(bonus))
+s_calc()
