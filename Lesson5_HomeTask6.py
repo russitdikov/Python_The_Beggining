@@ -3,10 +3,10 @@
 
 user_input = input('введите числа через пробел ')
 sum_of_f = 0
-with open('f_hometask5.txt', 'w',encoding='utf-8')as write_file:
+with open('f_hometask5.txt', 'w+',encoding='utf-8')as write_file:
     write_file.writelines(user_input)
-with open('f_hometask5.txt', 'r',encoding='utf-8')as read_file:
-    list_from_file = read_file.read().split()
+    write_file.seek(0)
+    list_from_file = write_file.read().split()
 for el in list_from_file:
     try:
         sum_of_f +=float(el)
