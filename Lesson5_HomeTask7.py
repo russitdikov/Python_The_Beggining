@@ -11,3 +11,19 @@
 # [{"firm_1": 5000, "firm_2": 3000, "firm_3": 1000}, {"average_profit": 2000}]
 # Подсказка: использовать менеджеры контекста.
 
+import json
+
+f_list = []
+with open('text_7.txt', 'r', encoding='utf-8') as read_file:
+    f_dict = {el.split()[0]: (float(el.split()[2]) - float(el.split()[3])) for el in read_file.readlines()}
+profit_c = 0
+f_count = 0
+for key in f_dict:
+    if f_dict[key] > 0:
+        profit_c += f_dict[key]
+        f_count += 1
+f_list.append(f_dict)
+f_list.append({'avarage_profit': profit_c / f_count})
+
+with open('l5_HT_7.json', 'w', encoding='utf-8') as f_export:
+    json.dump(f_list, f_export, ensure_ascii=False, )
