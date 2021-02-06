@@ -4,7 +4,7 @@
 
 with open('text_3.txt', 'r', encoding='utf-8') as h_t_3:
     line = h_t_3.readlines()
-staff_dic = {el.split()[0]:float(el.split()[1]) for el in line}
+staff_dic = {el.split()[0]: float(el.split()[1]) for el in line}
 less_than_20k = [staff for staff in staff_dic if staff_dic.get(staff) < 20000]
 c_staff=0
 salary=0

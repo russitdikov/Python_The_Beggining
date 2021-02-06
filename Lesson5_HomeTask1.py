@@ -7,10 +7,3 @@ while True:
         first_file.writelines(f'{user_input}\n')
     if user_input == '':
         break
-
-
-
-
-
-
-
