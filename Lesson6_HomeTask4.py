@@ -8,10 +8,11 @@
 # Выполните вызов методов и также покажите результат.
 
 class Car:
-    speed = 0
-    color = ''
-    name = ''
-    is_police = False
+    def __init__(self, speed, color, name):
+        self.speed = speed
+        self.color = color
+        self.name = name
+        self.is_police = False
 
     def go(self):
         print('автомобиль поехал')
@@ -32,12 +33,7 @@ class Car:
 
 
 class TownCar(Car):
-    def __init__(self, speed, color, name):
-        self.speed = speed
-        self.color = color
-        self.name = name
-
-    def show_speed(self):
+       def show_speed(self):
         if self.speed > 60:
             print(f'Превышение!!! Ваша скорость {self.speed}')
         else:
@@ -45,12 +41,7 @@ class TownCar(Car):
 
 
 class WorkCar(Car):
-    def __init__(self, speed, color, name):
-        self.speed = speed
-        self.color = color
-        self.name = name
-
-    def show_speed(self):
+       def show_speed(self):
         if self.speed > 40:
             print(f'Превышение!!! Ваша скорость {self.speed}')
         else:
@@ -58,18 +49,14 @@ class WorkCar(Car):
 
 
 class SportCar(Car):
-    def __init__(self, speed, color, name):
-        self.speed = speed
-        self.color = color
-        self.name = name
+    pass
+
 
 
 class PoliceCar(Car):
     def __init__(self, speed, color, name):
-        self.speed = speed
-        self.color = color
-        self.name = name
-        self.is_policelice = True
+        super().__init__(speed,color,name)
+        self.is_police = False
 
 
 police_car1 = PoliceCar(100, 'red', 'cop1')
@@ -85,4 +72,5 @@ police_car1.stop()
 print(police_car1.__dir__())
 
 town_car1.show_speed()
+print(town_car1.color)
 town_car2.show_speed()
