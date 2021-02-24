@@ -1,0 +1,8 @@
+WH_Name:WH3
+shielf_qnt:100
+place_on_shielf_qnt:100
+idle_place:9999
+prt_in_WH3:prt_in_WH3.txt
+scans_in_WH3:scans_in_WH3.txt
+xerox_in_WH3:xerox_in_WH3.txt
+

@@ -1,0 +1,2 @@
+xerox_name:xerox_1 serial_number:001 status:in_the_wh WH_stored_name:WH1
+xerox_name:xerox_2 serial_number:002 status:in_the_wh WH_stored_name:WH2

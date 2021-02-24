@@ -1,0 +1,4 @@
+Printer_name:printer_1 serial_number:001 status:in_the_wh WH_stored_name:WH1
+Printer_name:printer_2 serial_number:002 status:purchased WH_stored_name:na
+Printer_name:printer_1 serial_number:001 status:purchased WH_stored_name:na
+Printer_name:printer_2 serial_number:002 status:purchased WH_stored_name:na

@@ -1,0 +1,11 @@
+WH_Name:WH1
+shielf_qnt:100
+place_on_shielf_qnt:100
+idle_place:9998
+prt_in_WH1:prt_in_WH1.txt
+scans_in_WH1:scans_in_WH1.txt
+xerox_in_WH1:xerox_in_WH1.txt
+
+
+
+
