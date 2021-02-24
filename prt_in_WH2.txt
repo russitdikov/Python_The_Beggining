@@ -1,0 +1,2 @@
+Printer_name:printer_1 serial_number:001 status:in_the_wh WH_stored_name:WH2
+Printer_name:printer_2 serial_number:002 status:in_the_wh WH_stored_name:WH2

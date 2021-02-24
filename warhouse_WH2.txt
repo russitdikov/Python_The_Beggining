@@ -1,0 +1,10 @@
+WH_Name:WH2
+shielf_qnt:100
+place_on_shielf_qnt:100
+idle_place:9997
+prt_in_WH2:prt_in_WH2.txt
+scans_in_WH2:scans_in_WH2.txt
+xerox_in_WH2:xerox_in_WH2.txt
+
+
+
